@@ -23,7 +23,6 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import MainTabs from "./pages/MainTabs";
 import { connect } from "./data/connect";
 import { AppContextProvider } from "./data/AppContext";
 import { loadConfData } from "./data/sessions/sessions.actions";
@@ -32,18 +31,20 @@ import {
   setUsername,
   loadUserData,
 } from "./data/user/user.actions";
+import MainTabs from "./pages/MainTabs";
 import Account from "./pages/Account";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Support from "./pages/Support";
 import Tutorial from "./pages/Tutorial";
+import Templates from "./pages/Templates";
+import Games from "./pages/Games";
+import CameraPage from "./pages/CameraPage"
+import Projects from "./pages/Projects";
+
 import HomeOrTutorial from "./components/HomeOrTutorial";
 import { Session } from "./models/Session";
 import * as firebase from "firebase/app";
-import Projects from "./pages/Projects";
-import Games from "./pages/Games";
-import Templates from "./pages/Templates";
-import CameraPage from "./pages/CameraPage"
 
 export const firebaseConfig = {
   apiKey: "AIzaSyD6NGOyMliRPDOt6t-38vzjzUko-yJk5G8",
